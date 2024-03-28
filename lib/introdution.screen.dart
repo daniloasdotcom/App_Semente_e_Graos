@@ -25,7 +25,7 @@ class _IntroductionScreenPageState extends State<IntroductionScreenPage> {
             bodyTextStyle: TextStyle(fontSize: 18.0),
             // Adicione um fundo verde à página personalizada
             boxDecoration: BoxDecoration(
-              color: Colors.white,
+              color: Color(0xFF2E4650),
             ),
           ),
           bodyWidget: Center(
@@ -38,33 +38,24 @@ class _IntroductionScreenPageState extends State<IntroductionScreenPage> {
                     "O Aplicativo Oficial para você Aluno do Professor Danilo",
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                      color: Colors.black,
+                      color: Colors.white,
                       height: 1.5,
                       fontSize: 16,
                       fontFamily: 'Merriweather',
                     ),
                   ),
                 ),
-                Container(
-                  margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
-                  width: 250, // Ajuste a largura desejada
-                  height: 250, // Ajuste a altura desejada
-                  alignment: Alignment.center,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: const BorderRadius.all(Radius.circular(90)),
-                    border: Border.all(
-                      color: Colors.white,
-                      width: 4.0,
-                    ),
-                  ),
-                  child: Image.asset(
-                    'assets/images/pic01.png',
-                    fit: BoxFit.cover,
-                    width: 150, // Ajuste a largura desejada
-                    height: 150, // Ajuste a altura desejada
-                  ),
+               Container(
+                margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
+                width: 200, // Ajuste a largura desejada
+                height: 200, // Ajuste a altura desejada
+                alignment: Alignment.center,
+                child: const Icon(
+                  FontAwesomeIcons.chalkboardUser,
+                  color: Color(0xFFE58E57),
+                  size: 150,
                 ),
+              ),
                 Container(
                   margin: const EdgeInsets.only(
                       left: 40, right: 40, top: 30, bottom: 30),
@@ -72,7 +63,7 @@ class _IntroductionScreenPageState extends State<IntroductionScreenPage> {
                     "Laboratório de Sementes e Grãos",
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                      color: Colors.black,
+                      color: Colors.white,
                       fontSize: 24,
                       fontFamily: 'Merriweather',
                     ),
@@ -89,32 +80,20 @@ class _IntroductionScreenPageState extends State<IntroductionScreenPage> {
             bodyTextStyle: TextStyle(fontSize: 18.0),
             // Adicione um fundo verde à página personalizada
             boxDecoration: BoxDecoration(
-              color: Colors.white,
+              color: Color(0xFF2E4650),
             ),
           ),
           bodyWidget: Column(
             children: [
               Container(
                 margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
-                width: 250, // Ajuste a largura desejada
-                height: 250, // Ajuste a altura desejada
+                width: 200, // Ajuste a largura desejada
+                height: 200, // Ajuste a altura desejada
                 alignment: Alignment.center,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: const BorderRadius.all(Radius.circular(90)),
-                  border: Border.all(
-                    color: Colors.white,
-                    width: 4.0,
-                  ),
-                ),
-                child: ClipRRect(
-                  borderRadius: const BorderRadius.all(Radius.circular(90)),
-                  child: Image.asset(
-                    'assets/images/pic01.png',
-                    fit: BoxFit.cover,
-                    width: 150, // Ajuste a largura desejada
-                    height: 150, // Ajuste a altura desejada
-                  ),
+                child: const Icon(
+                  FontAwesomeIcons.seedling   ,
+                  color: Color(0xFFE58E57),
+                  size: 150,
                 ),
               ),
               Container(
@@ -125,7 +104,7 @@ class _IntroductionScreenPageState extends State<IntroductionScreenPage> {
                     "A cada questão estudada um novo aprendizado cultivado",
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                      color: Colors.black,
+                      color: Colors.white,
                       height: 1.5,
                       fontSize: 14,
                       fontFamily: 'Merriweather',
@@ -138,12 +117,12 @@ class _IntroductionScreenPageState extends State<IntroductionScreenPage> {
                 margin: const EdgeInsets.only(
                     left: 40, right: 40, top: 5, bottom: 30),
                 decoration: BoxDecoration(
-                  color: Colors.blue,
+                  color: Color(0xFFE58E57),
                   borderRadius: BorderRadius.circular(10),
                 ),
                 child: TextButton.icon(
                   onPressed: () {
-                    _navigateToHomePage(context);
+                    _navigateToHomePage01(context);
                   },
                   icon: const Icon(Icons.home, color: Colors.white),
                   style: TextButton.styleFrom(
@@ -178,7 +157,7 @@ class _IntroductionScreenPageState extends State<IntroductionScreenPage> {
                     );
                   },
                   icon: const Icon(FontAwesomeIcons.eyeSlash,
-                      color: Colors.black),
+                      color: Colors.white),
                   style: TextButton.styleFrom(
                     alignment: Alignment.centerLeft,
                     minimumSize: const Size(100, 50),
@@ -189,127 +168,10 @@ class _IntroductionScreenPageState extends State<IntroductionScreenPage> {
                         fontFamily: 'Merriweather',
                         fontSize: 12,
                         decoration: TextDecoration.underline,
-                        decorationColor: Colors.black,
+                        decorationColor: Colors.white,
                         fontStyle: FontStyle.italic,
                         decorationStyle: TextDecorationStyle.solid,
-                        color: Colors.black),
-                    textAlign: TextAlign.center,
-                  ),
-                ),
-              ),
-            ],
-          )),
-      PageViewModel(
-          title: "",
-          decoration: const PageDecoration(
-            titleTextStyle:
-                TextStyle(fontSize: 28.0, fontWeight: FontWeight.bold),
-            bodyTextStyle: TextStyle(fontSize: 18.0),
-            // Adicione um fundo verde à página personalizada
-            boxDecoration: BoxDecoration(
-              color: Colors.white,
-            ),
-          ),
-          bodyWidget: Column(
-            children: [
-              Container(
-                margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
-                width: 200, // Ajuste a largura desejada
-                height: 200, // Ajuste a altura desejada
-                alignment: Alignment.center,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: const BorderRadius.all(Radius.circular(90)),
-                  border: Border.all(
-                    color: Colors.white,
-                    width: 4.0,
-                  ),
-                ),
-                child: ClipRRect(
-                  borderRadius: const BorderRadius.all(Radius.circular(90)),
-                  child: Image.asset(
-                    'assets/images/pic01.png',
-                    fit: BoxFit.cover,
-                    width: 150, // Ajuste a largura desejada
-                    height: 150, // Ajuste a altura desejada
-                  ),
-                ),
-              ),
-              Container(
-                margin: const EdgeInsets.only(
-                    left: 40, right: 40, top: 30, bottom: 30),
-                child: const Column(children: [
-                  Text(
-                    "Adquira a assinatura premium e fique mais perto da aprovação",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: Colors.black,
-                      height: 1.5,
-                      fontSize: 14,
-                      fontFamily: 'Merriweather',
-                    ),
-                  ),
-                ]),
-              ),
-              Container(
-                padding: const EdgeInsets.fromLTRB(20, 5, 20, 5),
-                margin: const EdgeInsets.only(
-                    left: 40, right: 40, top: 5, bottom: 20),
-                decoration: BoxDecoration(
-                  color: Colors.blue,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: TextButton.icon(
-                  onPressed: () {
-                    _navigateToHomePage(context);
-                  },
-                  icon: const Icon(Icons.home, color: Colors.white),
-                  style: TextButton.styleFrom(
-                    alignment: Alignment.centerLeft,
-                    minimumSize: const Size(100, 50),
-                  ),
-                  label: const Text(
-                    "Testar Versão Gratuita",
-                    style: TextStyle(
-                        fontFamily: 'Merriweather',
-                        fontSize: 12,
                         color: Colors.white),
-                    textAlign: TextAlign.left,
-                  ),
-                ),
-              ),
-              
-              Container(
-                padding: const EdgeInsets.fromLTRB(40, 5, 40, 5),
-                margin: const EdgeInsets.only(left: 40, right: 40, top: 0),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: TextButton.icon(
-                  onPressed: () async {
-                    await _setSkipIntro();
-                    Navigator.of(context).pushReplacement(
-                      MaterialPageRoute(
-                        builder: (context) => HomePage(),
-                      ),
-                    );
-                  },
-                  icon: const Icon(FontAwesomeIcons.eyeSlash,
-                      color: Colors.black),
-                  style: TextButton.styleFrom(
-                    alignment: Alignment.centerLeft,
-                    minimumSize: const Size(100, 50),
-                  ),
-                  label: const Text(
-                    "Já Entendi, Não Mostrar Mais",
-                    style: TextStyle(
-                        fontFamily: 'Merriweather',
-                        fontSize: 12,
-                        decoration: TextDecoration.underline,
-                        decorationColor: Colors.black,
-                        fontStyle: FontStyle.italic,
-                        decorationStyle: TextDecorationStyle.solid,
-                        color: Colors.black),
                     textAlign: TextAlign.center,
                   ),
                 ),
@@ -326,12 +188,12 @@ class _IntroductionScreenPageState extends State<IntroductionScreenPage> {
       onDone: () {
         // Navegue para a próxima tela após a introdução
         // Substitua este código com a navegação real do seu aplicativo
-        _navigateToHomePage(context);
+        _navigateToHomePage01(context);
       },
       onSkip: () {
         // Navegue para a próxima tela após a introdução
         // Substitua este código com a navegação real do seu aplicativo
-        _navigateToHomePage(context);
+        _navigateToHomePage01(context);
       },
       showSkipButton: true,
       skip: const Text(
@@ -339,7 +201,7 @@ class _IntroductionScreenPageState extends State<IntroductionScreenPage> {
         style: TextStyle(color: Colors.white, fontFamily: 'Merriweather'),
       ),
       dotsContainerDecorator: const ShapeDecoration(
-          color: Colors.blue,
+          color: Color(0xFFE58E57),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.all(Radius.circular(0)),
           )),
@@ -363,7 +225,7 @@ class _IntroductionScreenPageState extends State<IntroductionScreenPage> {
     );
   }
 
-  void _navigateToHomePage(BuildContext context) {
+  void _navigateToHomePage01(BuildContext context) {
     Navigator.of(context).pushReplacement(
       PageRouteBuilder(
         pageBuilder: (context, animation, secondaryAnimation) => HomePage(),

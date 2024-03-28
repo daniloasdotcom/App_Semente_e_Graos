@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sementes_ufes/home.dart';
+import 'package:sementes_ufes/quiz.page.dart';
 import 'package:sementes_ufes/introdution.screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: shouldShowIntro ? IntroductionScreenPage() : HomePage(),
+      home: shouldShowIntro ? IntroductionScreenPage() : QuizPage(),
     );
   }
 }

@@ -3,7 +3,7 @@ import 'package:sementes_ufes/amendoim/amendoim.page.1to5.dart';
 import 'package:sementes_ufes/amendoim/amendoim.page.6to10.dart';
 import 'package:sementes_ufes/amendoim/questoes.amendoim.1to5.dart';
 import 'package:sementes_ufes/amendoim/questoes.amendoim.6to10.dart';
-import 'package:sementes_ufes/home.dart';
+import 'package:sementes_ufes/quiz.page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 
@@ -74,7 +74,7 @@ class _AmendoimListState extends State<AmendoimList> {
               ),
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return HomePage();
+                  return QuizPage();
                 }));
               },
             )

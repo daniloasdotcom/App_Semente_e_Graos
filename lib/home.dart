@@ -1,199 +1,273 @@
-// ignore_for_file: use_key_in_widget_constructors
-
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:sementes_ufes/amendoim/amendoim.list.dart';
+import 'package:sementes_ufes/amendoim/questoes.amendoim.1to5.dart';
+import 'package:sementes_ufes/quiz.page.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class HomePage extends StatelessWidget {
-
+  final Uri _url = Uri.parse('https://bioquimicacomdanilo.com.br/politicaapp');
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
-      body: Row(
-        children: [
-          Container(
-            width: 60, // Largura da barra lateral
-            color: Colors.blue, // Cor de fundo da barra lateral
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                // Coloque os itens da barra lateral aqui
-                IconButton(
-                  icon: const Icon(FontAwesomeIcons.globe, color: Colors.white),
-                  onPressed: () {
-                    // Substitua o URL fictício pelo link real do Facebook
-                    // ignore: deprecated_member_use
-                    launch('https://codigoagro.com/');
-                  },
-                ),
-                const SizedBox(height: 20),
-                IconButton(
-                  icon:
-                      const Icon(FontAwesomeIcons.youtube, color: Colors.white),
-                  onPressed: () {
-                    // Substitua o URL fictício pelo link real do Twitter
-                    // ignore: deprecated_member_use
-                    launch(
-                        'https://www.youtube.com/channel/UC0UymNZAzHWkoyTyAgc0lgg?view_as=subscriber');
-                  },
-                ),
-                const SizedBox(height: 20),
-                IconButton(
-                  icon: const Icon(FontAwesomeIcons.instagram,
-                      color: Colors.white),
-                  onPressed: () {
-                    // Substitua o URL fictício pelo link real do Instagram
-                    // ignore: deprecated_member_use
-                    launch('https://www.instagram.com/codigo.agro/');
-                  },
-                ),
-                // Adicione outros ícones ou widgets conforme necessário
-              ],
-            ),
-          ),
-          Expanded(
-            child: Column(
-              children: [
-                const SizedBox(height: 80),
-                Container(
-                  alignment: Alignment.center,
-                  margin: const EdgeInsets.only(left: 40, right: 40),
-                  child: const Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          'Quiz\nComentado',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                              fontSize: 30,
-                              fontFamily: 'Merriweather',
-                              color: Colors.black,
-                              fontWeight: FontWeight.bold),
-                        ),
-                        SizedBox(
-                          width: 5,
-                        ),
-                        Icon(
-                          FontAwesomeIcons.seedling,
-                          size: 40,
-                          color: Colors.black,
-                        ),
-                      ]),
-                ),
-                const SizedBox(
-                  height: 30,
-                ),
-                
-                Container(
-                  padding: const EdgeInsets.only(left: 40, right: 40),
-                  child: const Text(
-                    'Cadernos de questões',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                        fontSize: 16,
-                        fontFamily: 'Merriweather',
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold),
+      backgroundColor: const Color(0xFF2E4650),
+      body: Center(
+        child: ListView(
+          children: [
+            Stack(children: [
+              Container(
+                padding: const EdgeInsets.only(
+                    left: 40, right: 40, top: 100, bottom: 100),
+                margin: const EdgeInsets.only(bottom: 10),
+                decoration: const BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage(
+                        'assets/images/fundo01.jpg'), // Replace with your image path
+                    fit: BoxFit.cover, // You can adjust the fit as needed
                   ),
                 ),
-                Container(
-                  margin: const EdgeInsets.only(left: 75, right: 75, top: 5),
-                  height: 2,
-                  color: Colors.grey[500], // Cor da linha
+                foregroundDecoration: const BoxDecoration(
+                  color: Color.fromRGBO(43, 70, 80, 0.6),
                 ),
-                Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 30),
-                    child: Scrollbar(
-                      thumbVisibility: true,
-                      child: ListView(
-                          physics: const BouncingScrollPhysics(),
-                          scrollDirection: Axis.vertical,
-                          children: [
-                            Container(
-                              margin:
-                                  const EdgeInsets.only(left: 20, right: 20),
-                              decoration: BoxDecoration(
-                                color: Colors.blue,
-                                borderRadius: BorderRadius.circular(10),
-                              ),
-                              child: TextButton.icon(
-                                onPressed: () {
-                                  Navigator.push(
-                                    context,
-                                    PageRouteBuilder(
-                                      pageBuilder:
-                                          (context, animation1, animation2) =>
-                                              AmendoimList(),
-                                      transitionsBuilder: (context, animation1,
-                                          animation2, child) {
-                                        const begin = Offset(1.0, 0.0);
-                                        const end = Offset.zero;
-                                        const curve = Curves.easeInOut;
-
-                                        var tween = Tween(
-                                                begin: begin, end: end)
-                                            .chain(CurveTween(curve: curve));
-                                        var offsetAnimation =
-                                            animation1.drive(tween);
-
-                                        return SlideTransition(
-                                          position: offsetAnimation,
-                                          child: child,
-                                        );
-                                      },
-                                      transitionDuration:
-                                          const Duration(milliseconds: 1500),
-                                    ),
-                                  );
-                                },
-                                icon: const Row(
-                                  children: [
-                                    SizedBox(width: 8),
-                                    Icon(FontAwesomeIcons.bookOpen,
-                                        color: Colors.white),
-                                    SizedBox(
-                                        width:
-                                            8), // Espaço entre o ícone e o texto
-                                  ],
-                                ),
-                                style: TextButton.styleFrom(
-                                  alignment: Alignment.centerLeft,
-                                  minimumSize: const Size(100, 50),
-                                ),
-                                label: const Text(
-                                  "Ecofisiologia do Amendoim",
-                                  style: TextStyle(
-                                    fontFamily: 'Merriweather',
-                                    fontSize: 12,
-                                    color: Colors.white,
-                                  ),
-                                  textAlign: TextAlign.left,
-                                ),
-                              ),
-                            ),
-                            const SizedBox(
-                              height: 20,
-                            )
-                          ]),
+              ),
+              Container(
+                margin: const EdgeInsets.only(left: 40, right: 40, top: 40),
+                child: const Column(
+                  children: [
+                    Text(
+                      "Semente e Grãos",
+                      style: TextStyle(
+                          fontFamily: 'Merriweather',
+                          fontSize: 30,
+                          color: Colors.white),
+                      textAlign: TextAlign.center,
                     ),
-                  ),
+                    SizedBox(
+                      height: 40,
+                    ),
+                    Text(
+                      "Seu aplicativo de estudo das disciplina do laboratórios de sementes e grãos",
+                      style: TextStyle(
+                          fontFamily: 'Merriweather',
+                          fontSize: 13,
+                          height: 1.5,
+                          color: Colors.white),
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
                 ),
-                Container(
-                  margin: const EdgeInsets.only(left: 75, right: 75, top: 0),
-                  height: 2,
-                  color: Colors.grey[500], // Cor da linha
+              ),
+            ]),
+
+            const SizedBox(height: 30),
+
+            Container(
+              margin: const EdgeInsets.only(left: 40, right: 40),
+              child: const Divider(
+                color: Colors.white, // Define a cor da linha
+                thickness: 0.5, // Define a espessura da linha (opcional)
+              ),
+            ), // Botão de acesso às rotas metabólicas
+            Container(
+              margin: const EdgeInsets.only(left: 40, right: 40, top: 5),
+              decoration: BoxDecoration(
+                color: const Color(0xFF2E4650),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: TextButton.icon(
+                onPressed: () {},
+                icon: const Icon(
+                  Icons.book_outlined,
+                  color: Color(0xFFE58E57),
                 ),
-                const SizedBox(
-                  height: 40,
+                style: TextButton.styleFrom(
+                  alignment: Alignment.centerLeft,
+                  minimumSize: const Size(100, 50),
                 ),
-              ],
+                label: const Text(
+                  "Estudo Guiado",
+                  style: TextStyle(
+                      fontFamily: 'Merriweather',
+                      fontSize: 12,
+                      color: Colors.white),
+                  textAlign: TextAlign.left,
+                ),
+              ),
             ),
-          ),
-        ],
+            Container(
+              margin: const EdgeInsets.only(left: 40, right: 40),
+              child: const Divider(
+                color: Colors.white, // Define a cor da linha
+                thickness: 0.5, // Define a espessura da linha (opcional)
+              ),
+            ), // Botão de acesso às rotas metabólicas
+            Container(
+              margin: const EdgeInsets.only(left: 40, right: 40),
+              decoration: BoxDecoration(
+                color: const Color(0xFF2E4650),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: TextButton.icon(
+                onPressed: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(
+                      builder: (context) => QuizPage(),
+                    ),
+                  );
+                },
+                icon: const Icon(
+                  Icons.question_answer,
+                  color: Color(0xFFE58E57),
+                ),
+                style: TextButton.styleFrom(
+                  alignment: Alignment.centerLeft,
+                  minimumSize: const Size(100, 50),
+                ),
+                label: const Text(
+                  "Questões Comentadas",
+                  style: TextStyle(
+                      fontFamily: 'Merriweather',
+                      fontSize: 12,
+                      color: Colors.white),
+                  textAlign: TextAlign.left,
+                ),
+              ),
+            ),
+            Container(
+              margin: const EdgeInsets.only(left: 40, right: 40),
+              child: const Divider(
+                color: Colors.white, // Define a cor da linha
+                thickness: 0.5, // Define a espessura da linha (opcional)
+              ),
+            ),
+            Container(
+              margin: const EdgeInsets.only(left: 40, right: 40, top: 5),
+              decoration: BoxDecoration(
+                color: const Color(0xFF2E4650),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: TextButton.icon(
+                onPressed: () {},
+                icon: const Icon(
+                  Icons.dashboard,
+                  color: Color(0xFFE58E57),
+                ),
+                style: TextButton.styleFrom(
+                  alignment: Alignment.centerLeft,
+                  minimumSize: const Size(100, 50),
+                ),
+                label: const Text(
+                  "FlashCards",
+                  style: TextStyle(
+                      fontFamily: 'Merriweather',
+                      fontSize: 12,
+                      color: Colors.white),
+                  textAlign: TextAlign.left,
+                ),
+              ),
+            ),
+            // Botão de Acesso à Página de About
+            Container(
+              margin: const EdgeInsets.only(left: 40, right: 40),
+              child: const Divider(
+                color: Colors.white, // Define a cor da linha
+                thickness: 0.5, // Define a espessura da linha (opcional)
+              ),
+            ),
+            Container(
+              margin: const EdgeInsets.only(left: 40, right: 40),
+              decoration: BoxDecoration(
+                color: const Color(0xFF2E4650),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: TextButton.icon(
+                onPressed: () {},
+                icon: const Icon(FontAwesomeIcons.rocket,
+                    color: Color(0xFFE58E57)),
+                style: TextButton.styleFrom(
+                  alignment: Alignment.centerLeft,
+                  minimumSize: const Size(100, 50),
+                ),
+                label: const Text(
+                  "Sobre o Aplicativo",
+                  style: TextStyle(
+                      fontFamily: 'Merriweather',
+                      fontSize: 12,
+                      color: Colors.white),
+                  textAlign: TextAlign.left,
+                ),
+              ),
+            ),
+
+            Container(
+              margin: const EdgeInsets.only(left: 40, right: 40),
+              child: const Divider(
+                color: Colors.white, // Define a cor da linha
+                thickness: 0.5, // Define a espessura da linha (opcional)
+              ),
+            ),
+            const SizedBox(height: 40),
+            Container(
+              margin: const EdgeInsets.only(left: 40, right: 40),
+              child: const Column(
+                children: [
+                  Text(
+                    "Desenvolvido por",
+                    style: TextStyle(
+                        fontFamily: 'Merriweather',
+                        fontSize: 14,
+                        fontStyle: FontStyle.italic,
+                        height: 1.5,
+                        color: Colors.white),
+                    textAlign: TextAlign.center,
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              margin: const EdgeInsets.only(left: 20, right: 20),
+              child: const Column(
+                children: [
+                  Text(
+                    "daniloas.com",
+                    style: TextStyle(
+                        fontFamily: 'Merriweather',
+                        fontSize: 14,
+                        height: 1.5,
+                        color: Colors.white),
+                    textAlign: TextAlign.center,
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            InkWell(
+              onTap: () {
+                _launchUrl();
+              },
+              child: const Text(
+                "Política de Privacidade",
+                style: TextStyle(
+                    fontFamily: 'Merriweather',
+                    fontSize: 14,
+                    fontStyle: FontStyle.italic,
+                    height: 1.5,
+                    decoration: TextDecoration.underline,
+                    decorationThickness: 2.0,
+                    color: Colors.white),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ],
+        ),
       ),
     );
+  }
+
+  Future<void> _launchUrl() async {
+    if (!await launchUrl(_url)) {
+      throw Exception('Could not launch $_url');
+    }
   }
 }

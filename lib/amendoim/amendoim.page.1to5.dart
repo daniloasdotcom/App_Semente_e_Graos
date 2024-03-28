@@ -6,7 +6,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:sementes_ufes/coments.model.dart';
-import 'package:sementes_ufes/home.dart';
+import 'package:sementes_ufes/quiz.page.dart';
 import 'questoes.amendoim.1to5.dart'; // Importe a classe Quiz
 
 class AmendoimPage1to5 extends StatefulWidget {
@@ -279,7 +279,7 @@ class _AmendoimPage1to5State extends State<AmendoimPage1to5>
               ),
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return HomePage();
+                  return QuizPage();
                 }));
               },
             )
