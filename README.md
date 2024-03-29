@@ -1,16 +1,21 @@
-# sementes_ufes
+# Seed & Grain Disciplines App
 
-A new Flutter project.
+![Seed & Grain Disciplines App Logo]([https://example.com/logo.png](https://daniloasdotcom.github.io/sementes-e-graos/))
 
-## Getting Started
+## Descrição
 
-This project is a starting point for a Flutter application.
+O App Sementes e Grãos é um projeto de aplicativo desenvolvido para auxiliar estudantes e profissionais da área Agronômica. Este aplicativo visa fornecer uma plataforma conveniente para acessar informações, recursos educacionais e ferramentas úteis para aprimorar o estudo e trabalho nas disciplinas ministradas pelo Professor Danilo.
 
-A few resources to get you started if this is your first Flutter project:
+## Recursos Principais
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Estudo Guiado:** Desenvolva seu conhecimento nos assuntos da disciplina através do estudo guiado
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **Questões Comentadas:** Aprofunde seu conhecimento ao acessar uma ampla gama de questões comentadas.
+
+- **Flash Cards:** Reforce seu aprendizado com os flash cards para que você fixe os novos termos apresentados na disciplina
+
+## Instalação
+
+Para instalar o aplicativo em seu dispositivo móvel, siga estas etapas simples:
+
+1. Em breve estará disponível na Google Play
