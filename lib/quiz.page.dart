@@ -10,12 +10,12 @@ class QuizPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF2E4650),
+      backgroundColor: Color(0xFFF9E60A),
       body: Row(
         children: [
           Container(
             width: 60, // Largura da barra lateral
-            color: Color(0xFF2E4650),
+            color: Colors.black,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -66,7 +66,7 @@ class QuizPage extends StatelessWidget {
                     style: TextStyle(
                         fontSize: 16,
                         fontFamily: 'Merriweather',
-                        color: Colors.white,
+                        color: Colors.black,
                         fontWeight: FontWeight.bold),
                   ),
                 ),
@@ -88,7 +88,7 @@ class QuizPage extends StatelessWidget {
                               margin:
                                   const EdgeInsets.only(left: 20, right: 20),
                               decoration: BoxDecoration(
-                                color: Color(0xFFE58E57),
+                                color: Colors.black,
                                 borderRadius: BorderRadius.circular(10),
                               ),
                               child: TextButton.icon(
@@ -125,7 +125,7 @@ class QuizPage extends StatelessWidget {
                                   children: [
                                     SizedBox(width: 8),
                                     Icon(FontAwesomeIcons.bookOpen,
-                                        color: Colors.black),
+                                        color: Colors.white),
                                     SizedBox(
                                         width:
                                             8), // Espaço entre o ícone e o texto
@@ -140,7 +140,7 @@ class QuizPage extends StatelessWidget {
                                   style: TextStyle(
                                     fontFamily: 'Merriweather',
                                     fontSize: 12,
-                                    color: Colors.black,
+                                    color: Colors.white,
                                   ),
                                   textAlign: TextAlign.left,
                                 ),
@@ -153,7 +153,7 @@ class QuizPage extends StatelessWidget {
                               margin:
                                   const EdgeInsets.only(left: 20, right: 20),
                               decoration: BoxDecoration(
-                                color: Color(0xFFE58E57),
+                                color: Colors.black,
                                 borderRadius: BorderRadius.circular(10),
                               ),
                               child: TextButton.icon(
@@ -190,7 +190,7 @@ class QuizPage extends StatelessWidget {
                                   children: [
                                     SizedBox(width: 8),
                                     Icon(FontAwesomeIcons.bookOpen,
-                                        color: Colors.black),
+                                        color: Colors.white),
                                     SizedBox(
                                         width:
                                             8), // Espaço entre o ícone e o texto
@@ -205,7 +205,7 @@ class QuizPage extends StatelessWidget {
                                   style: TextStyle(
                                     fontFamily: 'Merriweather',
                                     fontSize: 12,
-                                    color: Colors.black,
+                                    color: Colors.white,
                                   ),
                                   textAlign: TextAlign.left,
                                 ),
@@ -218,7 +218,7 @@ class QuizPage extends StatelessWidget {
                               margin:
                                   const EdgeInsets.only(left: 20, right: 20),
                               decoration: BoxDecoration(
-                                color: Color(0xFFE58E57),
+                                color: Colors.black,
                                 borderRadius: BorderRadius.circular(10),
                               ),
                               child: TextButton.icon(
@@ -255,7 +255,7 @@ class QuizPage extends StatelessWidget {
                                   children: [
                                     SizedBox(width: 8),
                                     Icon(FontAwesomeIcons.bookOpen,
-                                        color: Colors.black),
+                                        color: Colors.white),
                                     SizedBox(
                                         width:
                                             8), // Espaço entre o ícone e o texto
@@ -270,7 +270,7 @@ class QuizPage extends StatelessWidget {
                                   style: TextStyle(
                                     fontFamily: 'Merriweather',
                                     fontSize: 12,
-                                    color: Colors.black,
+                                    color: Colors.white,
                                   ),
                                   textAlign: TextAlign.left,
                                 ),
@@ -283,7 +283,7 @@ class QuizPage extends StatelessWidget {
                               margin:
                                   const EdgeInsets.only(left: 20, right: 20),
                               decoration: BoxDecoration(
-                                color: Color(0xFFE58E57),
+                                color: Colors.black,
                                 borderRadius: BorderRadius.circular(10),
                               ),
                               child: TextButton.icon(
@@ -320,7 +320,7 @@ class QuizPage extends StatelessWidget {
                                   children: [
                                     SizedBox(width: 8),
                                     Icon(FontAwesomeIcons.bookOpen,
-                                        color: Colors.black),
+                                        color: Colors.white),
                                     SizedBox(
                                         width:
                                             8), // Espaço entre o ícone e o texto
@@ -335,7 +335,7 @@ class QuizPage extends StatelessWidget {
                                   style: TextStyle(
                                     fontFamily: 'Merriweather',
                                     fontSize: 12,
-                                    color: Colors.black,
+                                    color: Colors.white,
                                   ),
                                   textAlign: TextAlign.left,
                                 ),
@@ -348,7 +348,7 @@ class QuizPage extends StatelessWidget {
                               margin:
                                   const EdgeInsets.only(left: 20, right: 20),
                               decoration: BoxDecoration(
-                                color: Color(0xFFE58E57),
+                                color: Colors.black,
                                 borderRadius: BorderRadius.circular(10),
                               ),
                               child: TextButton.icon(
@@ -385,7 +385,7 @@ class QuizPage extends StatelessWidget {
                                   children: [
                                     SizedBox(width: 8),
                                     Icon(FontAwesomeIcons.bookOpen,
-                                        color: Colors.black),
+                                        color: Colors.white),
                                     SizedBox(
                                         width:
                                             8), // Espaço entre o ícone e o texto
@@ -400,7 +400,7 @@ class QuizPage extends StatelessWidget {
                                   style: TextStyle(
                                     fontFamily: 'Merriweather',
                                     fontSize: 12,
-                                    color: Colors.black,
+                                    color: Colors.white,
                                   ),
                                   textAlign: TextAlign.left,
                                 ),
@@ -413,7 +413,7 @@ class QuizPage extends StatelessWidget {
                               margin:
                                   const EdgeInsets.only(left: 20, right: 20),
                               decoration: BoxDecoration(
-                                color: Color(0xFFE58E57),
+                                color: Colors.black,
                                 borderRadius: BorderRadius.circular(10),
                               ),
                               child: TextButton.icon(
@@ -450,7 +450,7 @@ class QuizPage extends StatelessWidget {
                                   children: [
                                     SizedBox(width: 8),
                                     Icon(FontAwesomeIcons.bookOpen,
-                                        color: Colors.black),
+                                        color: Colors.white),
                                     SizedBox(
                                         width:
                                             8), // Espaço entre o ícone e o texto
@@ -465,7 +465,7 @@ class QuizPage extends StatelessWidget {
                                   style: TextStyle(
                                     fontFamily: 'Merriweather',
                                     fontSize: 12,
-                                    color: Colors.black,
+                                    color: Colors.white,
                                   ),
                                   textAlign: TextAlign.left,
                                 ),
@@ -478,7 +478,7 @@ class QuizPage extends StatelessWidget {
                               margin:
                                   const EdgeInsets.only(left: 20, right: 20),
                               decoration: BoxDecoration(
-                                color: Color(0xFFE58E57),
+                                color: Colors.black,
                                 borderRadius: BorderRadius.circular(10),
                               ),
                               child: TextButton.icon(
@@ -515,7 +515,7 @@ class QuizPage extends StatelessWidget {
                                   children: [
                                     SizedBox(width: 8),
                                     Icon(FontAwesomeIcons.bookOpen,
-                                        color: Colors.black),
+                                        color: Colors.white),
                                     SizedBox(
                                         width:
                                             8), // Espaço entre o ícone e o texto
@@ -530,7 +530,7 @@ class QuizPage extends StatelessWidget {
                                   style: TextStyle(
                                     fontFamily: 'Merriweather',
                                     fontSize: 12,
-                                    color: Colors.black,
+                                    color: Colors.white,
                                   ),
                                   textAlign: TextAlign.left,
                                 ),
