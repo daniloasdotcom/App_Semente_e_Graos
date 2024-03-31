@@ -8,7 +8,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF2E4650),
+      backgroundColor: const Color(0xFFF9E60A),
       body: Center(
         child: ListView(
           children: [
@@ -25,19 +25,19 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
                 foregroundDecoration: const BoxDecoration(
-                  color: Color.fromRGBO(43, 70, 80, 0.6),
+                  color: Color(0xFFF9E60A),
                 ),
               ),
               Container(
-                margin: const EdgeInsets.only(left: 40, right: 40, top: 40),
+                margin: const EdgeInsets.only(left: 40, right: 40, top: 80),
                 child: const Column(
                   children: [
                     Text(
-                      "Semente e Grãos",
+                      "SEMENTES E GRÃOS",
                       style: TextStyle(
                           fontFamily: 'Merriweather',
-                          fontSize: 30,
-                          color: Colors.white),
+                          fontSize: 25,
+                          color: Colors.black),
                       textAlign: TextAlign.center,
                     ),
                     SizedBox(
@@ -49,7 +49,7 @@ class HomePage extends StatelessWidget {
                           fontFamily: 'Merriweather',
                           fontSize: 13,
                           height: 1.5,
-                          color: Colors.white),
+                          color: Colors.black),
                       textAlign: TextAlign.center,
                     ),
                   ],
@@ -62,21 +62,21 @@ class HomePage extends StatelessWidget {
             Container(
               margin: const EdgeInsets.only(left: 40, right: 40),
               child: const Divider(
-                color: Colors.white, // Define a cor da linha
+                color: Colors.black, // Define a cor da linha
                 thickness: 0.5, // Define a espessura da linha (opcional)
               ),
             ), // Botão de acesso às rotas metabólicas
             Container(
               margin: const EdgeInsets.only(left: 40, right: 40, top: 5),
               decoration: BoxDecoration(
-                color: const Color(0xFF2E4650),
+                color: Colors.black,
                 borderRadius: BorderRadius.circular(10),
               ),
               child: TextButton.icon(
                 onPressed: () {},
                 icon: const Icon(
                   Icons.book_outlined,
-                  color: Color(0xFFE58E57),
+                  color: Colors.white,
                 ),
                 style: TextButton.styleFrom(
                   alignment: Alignment.centerLeft,
@@ -95,14 +95,14 @@ class HomePage extends StatelessWidget {
             Container(
               margin: const EdgeInsets.only(left: 40, right: 40),
               child: const Divider(
-                color: Colors.white, // Define a cor da linha
+                color: Colors.black, // Define a cor da linha
                 thickness: 0.5, // Define a espessura da linha (opcional)
               ),
             ), // Botão de acesso às rotas metabólicas
             Container(
               margin: const EdgeInsets.only(left: 40, right: 40),
               decoration: BoxDecoration(
-                color: const Color(0xFF2E4650),
+                color: Colors.black,
                 borderRadius: BorderRadius.circular(10),
               ),
               child: TextButton.icon(
@@ -115,7 +115,7 @@ class HomePage extends StatelessWidget {
                 },
                 icon: const Icon(
                   Icons.question_answer,
-                  color: Color(0xFFE58E57),
+                  color: Colors.white,
                 ),
                 style: TextButton.styleFrom(
                   alignment: Alignment.centerLeft,
@@ -134,21 +134,21 @@ class HomePage extends StatelessWidget {
             Container(
               margin: const EdgeInsets.only(left: 40, right: 40),
               child: const Divider(
-                color: Colors.white, // Define a cor da linha
+                color: Colors.black, // Define a cor da linha
                 thickness: 0.5, // Define a espessura da linha (opcional)
               ),
             ),
             Container(
               margin: const EdgeInsets.only(left: 40, right: 40, top: 5),
               decoration: BoxDecoration(
-                color: const Color(0xFF2E4650),
+                color: Colors.black,
                 borderRadius: BorderRadius.circular(10),
               ),
               child: TextButton.icon(
                 onPressed: () {},
                 icon: const Icon(
                   Icons.dashboard,
-                  color: Color(0xFFE58E57),
+                  color: Colors.white,
                 ),
                 style: TextButton.styleFrom(
                   alignment: Alignment.centerLeft,
@@ -168,20 +168,22 @@ class HomePage extends StatelessWidget {
             Container(
               margin: const EdgeInsets.only(left: 40, right: 40),
               child: const Divider(
-                color: Colors.white, // Define a cor da linha
+                color: Colors.black, // Define a cor da linha
                 thickness: 0.5, // Define a espessura da linha (opcional)
               ),
             ),
             Container(
               margin: const EdgeInsets.only(left: 40, right: 40),
               decoration: BoxDecoration(
-                color: const Color(0xFF2E4650),
+                color: Colors.black,
                 borderRadius: BorderRadius.circular(10),
               ),
               child: TextButton.icon(
                 onPressed: () {},
-                icon: const Icon(FontAwesomeIcons.rocket,
-                    color: Color(0xFFE58E57)),
+                icon: const Icon(
+                  FontAwesomeIcons.rocket,
+                  color: Colors.white,
+                ),
                 style: TextButton.styleFrom(
                   alignment: Alignment.centerLeft,
                   minimumSize: const Size(100, 50),
@@ -200,7 +202,7 @@ class HomePage extends StatelessWidget {
             Container(
               margin: const EdgeInsets.only(left: 40, right: 40),
               child: const Divider(
-                color: Colors.white, // Define a cor da linha
+                color: Colors.black, // Define a cor da linha
                 thickness: 0.5, // Define a espessura da linha (opcional)
               ),
             ),
@@ -216,7 +218,7 @@ class HomePage extends StatelessWidget {
                         fontSize: 14,
                         fontStyle: FontStyle.italic,
                         height: 1.5,
-                        color: Colors.white),
+                        color: Colors.black),
                     textAlign: TextAlign.center,
                   ),
                 ],
@@ -232,7 +234,7 @@ class HomePage extends StatelessWidget {
                         fontFamily: 'Merriweather',
                         fontSize: 14,
                         height: 1.5,
-                        color: Colors.white),
+                        color: Colors.black),
                     textAlign: TextAlign.center,
                   ),
                 ],
@@ -254,7 +256,7 @@ class HomePage extends StatelessWidget {
                     height: 1.5,
                     decoration: TextDecoration.underline,
                     decorationThickness: 2.0,
-                    color: Colors.white),
+                    color: Colors.black),
                 textAlign: TextAlign.center,
               ),
             ),
