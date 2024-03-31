@@ -1,21 +1,24 @@
-# Seed & Grain Disciplines App
+# Seed & Grain App
 
 ![Seed & Grain Disciplines App Logo]([https://example.com/logo.png](https://daniloasdotcom.github.io/sementes-e-graos/))
 
-## Descrição
+## Description
 
-O App Sementes e Grãos é um projeto de aplicativo desenvolvido para auxiliar estudantes e profissionais da área Agronômica. Este aplicativo visa fornecer uma plataforma conveniente para acessar informações, recursos educacionais e ferramentas úteis para aprimorar o estudo e trabalho nas disciplinas ministradas pelo Professor Danilo.
+The Seeds and Grains App is a project developed as a didactic demonstration in a didactic aptitude test for a public contest I am applying for here in Brazil for a position as a university professor.
+In this sense of functioning as a didactic tool, the application aims to provide a convenient platform to access information and exercises related to the subjects that I may teach if I am approved as a Professor.
+I hope to obtain a good position in this contest.
 
-## Recursos Principais
+## Key Features
 
-- **Estudo Guiado:** Desenvolva seu conhecimento nos assuntos da disciplina através do estudo guiado
+- **Guided Study:** Develop your knowledge in the subject areas through guided study.
 
-- **Questões Comentadas:** Aprofunde seu conhecimento ao acessar uma ampla gama de questões comentadas.
+- **Commented Questions:** Deepen your understanding by accessing a wide range of commented questions.
 
-- **Flash Cards:** Reforce seu aprendizado com os flash cards para que você fixe os novos termos apresentados na disciplina
+- **Flashcards:** Reinforce your learning with flashcards so you can memorize the new terms presented in the subject.
 
-## Instalação
+## Installation
 
-Para instalar o aplicativo em seu dispositivo móvel, siga estas etapas simples:
+To install the app on your mobile device, follow these simple steps:
 
-1. Em breve estará disponível na Google Play
+1. It will soon be available on Google Play.
+
