@@ -8,7 +8,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFF9E60A),
+      backgroundColor: const Color(0xFF49426E),
       body: Center(
         child: ListView(
           children: [
@@ -25,7 +25,7 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
                 foregroundDecoration: const BoxDecoration(
-                  color: Color(0xFFF9E60A),
+                  color: Color(0xFF49426E)
                 ),
               ),
               Container(
@@ -37,7 +37,7 @@ class HomePage extends StatelessWidget {
                       style: TextStyle(
                           fontFamily: 'Merriweather',
                           fontSize: 25,
-                          color: Colors.black),
+                          color: Color(0xFFF1C28E)),
                       textAlign: TextAlign.center,
                     ),
                     SizedBox(
@@ -49,7 +49,7 @@ class HomePage extends StatelessWidget {
                           fontFamily: 'Merriweather',
                           fontSize: 13,
                           height: 1.5,
-                          color: Colors.black),
+                          color: Color(0xFFF1C28E)),
                       textAlign: TextAlign.center,
                     ),
                   ],
@@ -62,21 +62,21 @@ class HomePage extends StatelessWidget {
             Container(
               margin: const EdgeInsets.only(left: 40, right: 40),
               child: const Divider(
-                color: Colors.black, // Define a cor da linha
+                color: Color(0xFFF1C28E), // Define a cor da linha
                 thickness: 0.5, // Define a espessura da linha (opcional)
               ),
             ), // Botão de acesso às rotas metabólicas
             Container(
               margin: const EdgeInsets.only(left: 40, right: 40, top: 5),
               decoration: BoxDecoration(
-                color: Colors.black,
+                color: Color(0xFFF1C28E),
                 borderRadius: BorderRadius.circular(10),
               ),
               child: TextButton.icon(
                 onPressed: () {},
                 icon: const Icon(
                   Icons.book_outlined,
-                  color: Colors.white,
+                  color: Color(0xFF322E53),
                 ),
                 style: TextButton.styleFrom(
                   alignment: Alignment.centerLeft,
@@ -87,7 +87,7 @@ class HomePage extends StatelessWidget {
                   style: TextStyle(
                       fontFamily: 'Merriweather',
                       fontSize: 12,
-                      color: Colors.white),
+                      color: Color(0xFF322E53),),
                   textAlign: TextAlign.left,
                 ),
               ),
@@ -95,14 +95,14 @@ class HomePage extends StatelessWidget {
             Container(
               margin: const EdgeInsets.only(left: 40, right: 40),
               child: const Divider(
-                color: Colors.black, // Define a cor da linha
+                color: Color(0xFFF1C28E), // Define a cor da linha
                 thickness: 0.5, // Define a espessura da linha (opcional)
               ),
             ), // Botão de acesso às rotas metabólicas
             Container(
               margin: const EdgeInsets.only(left: 40, right: 40),
               decoration: BoxDecoration(
-                color: Colors.black,
+                color: Color(0xFFF1C28E),
                 borderRadius: BorderRadius.circular(10),
               ),
               child: TextButton.icon(
@@ -115,7 +115,7 @@ class HomePage extends StatelessWidget {
                 },
                 icon: const Icon(
                   Icons.question_answer,
-                  color: Colors.white,
+                  color: Color(0xFF322E53),
                 ),
                 style: TextButton.styleFrom(
                   alignment: Alignment.centerLeft,
@@ -126,7 +126,7 @@ class HomePage extends StatelessWidget {
                   style: TextStyle(
                       fontFamily: 'Merriweather',
                       fontSize: 12,
-                      color: Colors.white),
+                      color: Color(0xFF322E53),),
                   textAlign: TextAlign.left,
                 ),
               ),
@@ -134,21 +134,21 @@ class HomePage extends StatelessWidget {
             Container(
               margin: const EdgeInsets.only(left: 40, right: 40),
               child: const Divider(
-                color: Colors.black, // Define a cor da linha
+                color: Color(0xFFF1C28E), // Define a cor da linha
                 thickness: 0.5, // Define a espessura da linha (opcional)
               ),
             ),
             Container(
               margin: const EdgeInsets.only(left: 40, right: 40, top: 5),
               decoration: BoxDecoration(
-                color: Colors.black,
+                color: Color(0xFFF1C28E),
                 borderRadius: BorderRadius.circular(10),
               ),
               child: TextButton.icon(
                 onPressed: () {},
                 icon: const Icon(
                   Icons.dashboard,
-                  color: Colors.white,
+                  color: Color(0xFF322E53),
                 ),
                 style: TextButton.styleFrom(
                   alignment: Alignment.centerLeft,
@@ -159,7 +159,7 @@ class HomePage extends StatelessWidget {
                   style: TextStyle(
                       fontFamily: 'Merriweather',
                       fontSize: 12,
-                      color: Colors.white),
+                      color: Color(0xFF322E53),),
                   textAlign: TextAlign.left,
                 ),
               ),
@@ -168,21 +168,21 @@ class HomePage extends StatelessWidget {
             Container(
               margin: const EdgeInsets.only(left: 40, right: 40),
               child: const Divider(
-                color: Colors.black, // Define a cor da linha
+                color: Color(0xFFF1C28E), // Define a cor da linha
                 thickness: 0.5, // Define a espessura da linha (opcional)
               ),
             ),
             Container(
               margin: const EdgeInsets.only(left: 40, right: 40),
               decoration: BoxDecoration(
-                color: Colors.black,
+                color: Color(0xFFF1C28E),
                 borderRadius: BorderRadius.circular(10),
               ),
               child: TextButton.icon(
                 onPressed: () {},
                 icon: const Icon(
                   FontAwesomeIcons.rocket,
-                  color: Colors.white,
+                  color: Color(0xFF322E53),
                 ),
                 style: TextButton.styleFrom(
                   alignment: Alignment.centerLeft,
@@ -193,7 +193,7 @@ class HomePage extends StatelessWidget {
                   style: TextStyle(
                       fontFamily: 'Merriweather',
                       fontSize: 12,
-                      color: Colors.white),
+                      color: Color(0xFF322E53),),
                   textAlign: TextAlign.left,
                 ),
               ),
@@ -202,7 +202,7 @@ class HomePage extends StatelessWidget {
             Container(
               margin: const EdgeInsets.only(left: 40, right: 40),
               child: const Divider(
-                color: Colors.black, // Define a cor da linha
+                color: Color(0xFFF1C28E), // Define a cor da linha
                 thickness: 0.5, // Define a espessura da linha (opcional)
               ),
             ),
@@ -218,7 +218,7 @@ class HomePage extends StatelessWidget {
                         fontSize: 14,
                         fontStyle: FontStyle.italic,
                         height: 1.5,
-                        color: Colors.black),
+                        color: Color(0xFFF1C28E)),
                     textAlign: TextAlign.center,
                   ),
                 ],
@@ -234,7 +234,7 @@ class HomePage extends StatelessWidget {
                         fontFamily: 'Merriweather',
                         fontSize: 14,
                         height: 1.5,
-                        color: Colors.black),
+                        color: Color(0xFFF1C28E)),
                     textAlign: TextAlign.center,
                   ),
                 ],
@@ -256,7 +256,7 @@ class HomePage extends StatelessWidget {
                     height: 1.5,
                     decoration: TextDecoration.underline,
                     decorationThickness: 2.0,
-                    color: Colors.black),
+                    color: Color(0xFFF1C28E)),
                 textAlign: TextAlign.center,
               ),
             ),

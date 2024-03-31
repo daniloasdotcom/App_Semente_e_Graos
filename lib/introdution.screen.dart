@@ -25,7 +25,7 @@ class _IntroductionScreenPageState extends State<IntroductionScreenPage> {
             bodyTextStyle: TextStyle(fontSize: 18.0),
             // Adicione um fundo verde à página personalizada
             boxDecoration: BoxDecoration(
-              color: Color(0xFF2E4650),
+              color: Color(0xFF49426E),
             ),
           ),
           bodyWidget: Center(
@@ -38,7 +38,7 @@ class _IntroductionScreenPageState extends State<IntroductionScreenPage> {
                     "O Aplicativo Oficial para você Aluno do Professor Danilo",
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                      color: Colors.white,
+                      color: Color(0xFFF1C28E),
                       height: 1.5,
                       fontSize: 16,
                       fontFamily: 'Merriweather',
@@ -52,7 +52,7 @@ class _IntroductionScreenPageState extends State<IntroductionScreenPage> {
                 alignment: Alignment.center,
                 child: const Icon(
                   FontAwesomeIcons.chalkboardUser,
-                  color: Color(0xFFE58E57),
+                  color: Color(0xFFF1C28E),
                   size: 150,
                 ),
               ),
@@ -63,7 +63,7 @@ class _IntroductionScreenPageState extends State<IntroductionScreenPage> {
                     "Laboratório de Sementes e Grãos",
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                      color: Colors.white,
+                      color: Color(0xFFF1C28E),
                       fontSize: 24,
                       fontFamily: 'Merriweather',
                     ),
@@ -80,7 +80,7 @@ class _IntroductionScreenPageState extends State<IntroductionScreenPage> {
             bodyTextStyle: TextStyle(fontSize: 18.0),
             // Adicione um fundo verde à página personalizada
             boxDecoration: BoxDecoration(
-              color: Color(0xFF2E4650),
+              color: Color(0xFF49426E),
             ),
           ),
           bodyWidget: Column(
@@ -92,7 +92,7 @@ class _IntroductionScreenPageState extends State<IntroductionScreenPage> {
                 alignment: Alignment.center,
                 child: const Icon(
                   FontAwesomeIcons.seedling   ,
-                  color: Color(0xFFE58E57),
+                  color: Color(0xFFF1C28E),
                   size: 150,
                 ),
               ),
@@ -104,7 +104,7 @@ class _IntroductionScreenPageState extends State<IntroductionScreenPage> {
                     "A cada questão estudada um novo aprendizado cultivado",
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                      color: Colors.white,
+                      color: Color(0xFFF1C28E),
                       height: 1.5,
                       fontSize: 14,
                       fontFamily: 'Merriweather',
@@ -117,14 +117,14 @@ class _IntroductionScreenPageState extends State<IntroductionScreenPage> {
                 margin: const EdgeInsets.only(
                     left: 40, right: 40, top: 5, bottom: 30),
                 decoration: BoxDecoration(
-                  color: Color(0xFFE58E57),
+                  color: Color(0xFFF1C28E),
                   borderRadius: BorderRadius.circular(10),
                 ),
                 child: TextButton.icon(
                   onPressed: () {
                     _navigateToHomePage01(context);
                   },
-                  icon: const Icon(Icons.home, color: Colors.white),
+                  icon: const Icon(Icons.home, color: Color(0xFF322E53)),
                   style: TextButton.styleFrom(
                     alignment: Alignment.centerLeft,
                     minimumSize: const Size(100, 50),
@@ -134,7 +134,7 @@ class _IntroductionScreenPageState extends State<IntroductionScreenPage> {
                     style: TextStyle(
                         fontFamily: 'Merriweather',
                         fontSize: 12,
-                        color: Colors.white),
+                        color: Color(0xFF322E53)),
                     textAlign: TextAlign.left,
                   ),
                 ),
@@ -157,7 +157,7 @@ class _IntroductionScreenPageState extends State<IntroductionScreenPage> {
                     );
                   },
                   icon: const Icon(FontAwesomeIcons.eyeSlash,
-                      color: Colors.white),
+                      color: Color(0xFFF1C28E),),
                   style: TextButton.styleFrom(
                     alignment: Alignment.centerLeft,
                     minimumSize: const Size(100, 50),
@@ -168,10 +168,10 @@ class _IntroductionScreenPageState extends State<IntroductionScreenPage> {
                         fontFamily: 'Merriweather',
                         fontSize: 12,
                         decoration: TextDecoration.underline,
-                        decorationColor: Colors.white,
+                        decorationColor: Color(0xFFF1C28E),
                         fontStyle: FontStyle.italic,
                         decorationStyle: TextDecorationStyle.solid,
-                        color: Colors.white),
+                        color: Color(0xFFF1C28E),),
                     textAlign: TextAlign.center,
                   ),
                 ),
@@ -198,25 +198,25 @@ class _IntroductionScreenPageState extends State<IntroductionScreenPage> {
       showSkipButton: true,
       skip: const Text(
         "Pular",
-        style: TextStyle(color: Colors.white, fontFamily: 'Merriweather'),
+        style: TextStyle(color: Color(0xFF322E53), fontFamily: 'Merriweather'),
       ),
       dotsContainerDecorator: const ShapeDecoration(
-          color: Color(0xFFE58E57),
+          color:Color(0xFFF1C28E),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.all(Radius.circular(0)),
           )),
       done: const Text(
         "Concluir",
-        style: TextStyle(color: Colors.white, fontFamily: 'Merriweather'),
+        style: TextStyle(color: Color(0xFF322E53), fontFamily: 'Merriweather'),
       ),
       next: const Icon(
         Icons.arrow_forward,
-        color: Colors.white,
+        color: Color(0xFF322E53),
       ),
       dotsDecorator: const DotsDecorator(
         size: Size(10.0, 10.0),
-        color: Colors.white,
-        activeColor: Colors.white,
+        color: Color(0xFF322E53),
+        activeColor: Color(0xFF322E53),
         activeSize: Size(22.0, 10.0),
         activeShape: RoundedRectangleBorder(
           borderRadius: BorderRadius.all(Radius.circular(25.0)),
