@@ -11,6 +11,7 @@ class HomePage extends StatelessWidget {
       backgroundColor: const Color(0xFF49426E),
       body: Center(
         child: ListView(
+          physics: const BouncingScrollPhysics(),
           children: [
             Stack(children: [
               Container(
