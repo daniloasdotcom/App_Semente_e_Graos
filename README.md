@@ -1,7 +1,5 @@
 # Seed & Grain App
 
-![Seed & Grain Disciplines App Logo]([https://example.com/logo.png](https://daniloasdotcom.github.io/sementes-e-graos/))
-
 ## Description
 
 The Seeds and Grains App is a project developed as a didactic demonstration in a didactic aptitude test for a public contest I am applying for here in Brazil for a position as a university professor.
